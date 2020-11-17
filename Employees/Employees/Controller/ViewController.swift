@@ -40,9 +40,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             switch result {
             case .success(let response):
                 print("success")
-//                let array: [Civilizations] = try! response.map(ResponseAPI.self).civilizations
-//                self.data = array
-//                self.tableView.reloadData()
+                 let array: [Employees] = try! response.map(ResponseAPI.self).data
+                self.data = array
+                self.tableView.reloadData()
             case .failure:
                 print("Error")
             }
@@ -51,12 +51,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as? CustomTableViewCell
+        let employees = data?[indexPath.row]
+        cell?.configure(employees: employees)
+        
+        return cell ?? UITableViewCell()
     }
 
 }

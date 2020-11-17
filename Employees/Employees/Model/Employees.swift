@@ -10,14 +10,14 @@ import Foundation
 
 struct ResponseAPI: Codable {
     
-    let status: String
+    let status: String?
     let data:[Employees]
 }
 
 struct Employees: Codable {
     
-    let id: Int
-    let employee_name: String
-    let employee_salary: Int
-    let employee_age: Int
+    let id: String?
+    let employee_name: String?
+    let employee_salary: String?
+    let employee_age: String?
 }

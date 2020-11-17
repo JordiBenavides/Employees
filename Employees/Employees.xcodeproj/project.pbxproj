@@ -18,6 +18,7 @@
 		9DA7BB922563E82500BC81E2 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BB902563E82500BC81E2 /* CustomTableViewCell.xib */; };
 		9DA7BB942563EB6700BC81E2 /* EmployeesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BB932563EB6700BC81E2 /* EmployeesAPI.swift */; };
 		9DA7BB962563F79E00BC81E2 /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BB952563F79E00BC81E2 /* Employees.swift */; };
+		9DA7BB982564393A00BC81E2 /* OneEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BB972564393A00BC81E2 /* OneEmployeeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		9DA7BB902563E82500BC81E2 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		9DA7BB932563EB6700BC81E2 /* EmployeesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAPI.swift; sourceTree = "<group>"; };
 		9DA7BB952563F79E00BC81E2 /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
+		9DA7BB972564393A00BC81E2 /* OneEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneEmployeeViewController.swift; sourceTree = "<group>"; };
 		AFED34ACBA606BB42AD6132C /* Pods-Employees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employees.release.xcconfig"; path = "Target Support Files/Pods-Employees/Pods-Employees.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA7BB792563E00F00BC81E2 /* ViewController.swift */,
+				9DA7BB972564393A00BC81E2 /* OneEmployeeViewController.swift */,
 				9DA7BB8D2563E32000BC81E2 /* Cell */,
 			);
 			path = Controller;
@@ -273,6 +276,7 @@
 				9DA7BB762563E00F00BC81E2 /* AppDelegate.swift in Sources */,
 				9DA7BB912563E82500BC81E2 /* CustomTableViewCell.swift in Sources */,
 				9DA7BB782563E00F00BC81E2 /* SceneDelegate.swift in Sources */,
+				9DA7BB982564393A00BC81E2 /* OneEmployeeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

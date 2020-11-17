@@ -10,15 +10,29 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var salaryLabel: UILabel!
+    
+    var data: Employees?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+      
+    }
+    
+    func configure(employees:Employees?){
+        
+        self.data = employees
+        nameLabel.text = data?.employee_name ?? ""
+        ageLabel.text = data?.employee_age ?? ""
+        salaryLabel.text = data?.employee_salary ?? ""
     }
     
 }
