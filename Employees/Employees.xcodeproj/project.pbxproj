@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -71,15 +71,63 @@
 		9DA7BB742563E00F00BC81E2 /* Employees */ = {
 			isa = PBXGroup;
 			children = (
-				9DA7BB752563E00F00BC81E2 /* AppDelegate.swift */,
-				9DA7BB772563E00F00BC81E2 /* SceneDelegate.swift */,
-				9DA7BB792563E00F00BC81E2 /* ViewController.swift */,
-				9DA7BB7B2563E00F00BC81E2 /* Main.storyboard */,
-				9DA7BB7E2563E01800BC81E2 /* Assets.xcassets */,
-				9DA7BB802563E01800BC81E2 /* LaunchScreen.storyboard */,
-				9DA7BB832563E01800BC81E2 /* Info.plist */,
+				9DA7BB892563E2D100BC81E2 /* Application */,
+				9DA7BB8A2563E2E900BC81E2 /* Model */,
+				9DA7BB8B2563E2FA00BC81E2 /* Network */,
+				9DA7BB8C2563E31000BC81E2 /* Controller */,
+				9DA7BB8E2563E32B00BC81E2 /* Resources */,
 			);
 			path = Employees;
+			sourceTree = "<group>";
+		};
+		9DA7BB892563E2D100BC81E2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BB772563E00F00BC81E2 /* SceneDelegate.swift */,
+				9DA7BB752563E00F00BC81E2 /* AppDelegate.swift */,
+				9DA7BB832563E01800BC81E2 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9DA7BB8A2563E2E900BC81E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DA7BB8B2563E2FA00BC81E2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9DA7BB8C2563E31000BC81E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BB792563E00F00BC81E2 /* ViewController.swift */,
+				9DA7BB8D2563E32000BC81E2 /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DA7BB8D2563E32000BC81E2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9DA7BB8E2563E32B00BC81E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BB802563E01800BC81E2 /* LaunchScreen.storyboard */,
+				9DA7BB7E2563E01800BC81E2 /* Assets.xcassets */,
+				9DA7BB7B2563E00F00BC81E2 /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BE4B9AADD65F79449FE6ED8B /* Pods */ = {
@@ -88,7 +136,6 @@
 				103F2C41B67BA35B55A54F3A /* Pods-Employees.debug.xcconfig */,
 				AFED34ACBA606BB42AD6132C /* Pods-Employees.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -355,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Employees/Info.plist;
+				INFOPLIST_FILE = Employees/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,7 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Employees/Info.plist;
+				INFOPLIST_FILE = Employees/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
