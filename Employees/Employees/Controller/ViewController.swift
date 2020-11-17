@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     let provider = MoyaProvider<EmployeesAPI>()
+    var data: [Employees]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
