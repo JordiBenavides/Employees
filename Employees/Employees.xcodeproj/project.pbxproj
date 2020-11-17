@@ -16,6 +16,7 @@
 		9DA7BB822563E01800BC81E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BB802563E01800BC81E2 /* LaunchScreen.storyboard */; };
 		9DA7BB912563E82500BC81E2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BB8F2563E82500BC81E2 /* CustomTableViewCell.swift */; };
 		9DA7BB922563E82500BC81E2 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BB902563E82500BC81E2 /* CustomTableViewCell.xib */; };
+		9DA7BB942563EB6700BC81E2 /* EmployeesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BB932563EB6700BC81E2 /* EmployeesAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9DA7BB832563E01800BC81E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA7BB8F2563E82500BC81E2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9DA7BB902563E82500BC81E2 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		9DA7BB932563EB6700BC81E2 /* EmployeesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAPI.swift; sourceTree = "<group>"; };
 		AFED34ACBA606BB42AD6132C /* Pods-Employees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Employees.release.xcconfig"; path = "Target Support Files/Pods-Employees/Pods-Employees.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		9DA7BB8B2563E2FA00BC81E2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9DA7BB932563EB6700BC81E2 /* EmployeesAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA7BB942563EB6700BC81E2 /* EmployeesAPI.swift in Sources */,
 				9DA7BB7A2563E00F00BC81E2 /* ViewController.swift in Sources */,
 				9DA7BB762563E00F00BC81E2 /* AppDelegate.swift in Sources */,
 				9DA7BB912563E82500BC81E2 /* CustomTableViewCell.swift in Sources */,
