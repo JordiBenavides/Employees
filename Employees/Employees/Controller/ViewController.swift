@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             switch result {
             case .success(let response):
                 print("success")
-                 let array: [Employees] = try! response.map(ResponseAPI.self).data
+                 let array: [Employees] = try! response.map(ResponseArrayAPI.self).data
                 self.data = array
                 self.tableView.reloadData()
             case .failure:
@@ -61,6 +61,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell?.configure(employees: employees)
         
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let vc = storyboard.instantiateViewController(withIdentifier: "OneEmployeeViewController") as? OneEmployeeViewController else { return }
+        vc.id = data?[indexPath.row].id
+            navigationController?.pushViewController(vc,
+                                               animated: true)
     }
 
 }

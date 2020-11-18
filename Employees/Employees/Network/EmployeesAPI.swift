@@ -12,7 +12,7 @@ import Moya
 enum EmployeesAPI {
     
     case getEmployees
-    //case getCiviById(id: Int)
+    case getEmploById(id: String)
     
 }
 
@@ -24,8 +24,8 @@ extension EmployeesAPI:TargetType,AccessTokenAuthorizable {
         case .getEmployees:
             return "employees"
             
-//        case .getCiviById(id: let id):
-//            return "civilization/\(id)"
+        case .getEmploById(id: let id):
+            return "employee/\(id)"
             
         }
         
@@ -36,8 +36,8 @@ extension EmployeesAPI:TargetType,AccessTokenAuthorizable {
         case .getEmployees:
             return .get
             
-//        case .getCiviById(id: _):
-//            return .get
+        case .getEmploById(id: _):
+            return .get
             
         }
     }
@@ -47,8 +47,8 @@ extension EmployeesAPI:TargetType,AccessTokenAuthorizable {
         case .getEmployees:
             return .bearer
             
-//        case .getCiviById(id: _):
-//            return .bearer
+        case .getEmploById(id: _):
+            return .bearer
             
         }
     }
@@ -58,8 +58,8 @@ extension EmployeesAPI:TargetType,AccessTokenAuthorizable {
         case .getEmployees:
             return .requestPlain
             
-//        case .getCiviById(id: _):
-//            return .requestPlain
+        case .getEmploById(id: _):
+            return .requestPlain
             
         }
     }
